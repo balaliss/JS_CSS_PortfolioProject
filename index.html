@@ -543,4 +543,15 @@
     </div>
     <script src="app.js"></script>
 </body>
+<body>
+    <!--Visitor Tracker-->
+    <p>You are visitor number: <span id="visitor-count"></span></p>
+    <script>
+        var visitorCount = document.getElementById('visitor-count');
+        fetch('https://api.countapi.xyz/hit/stevenbalalis.com/visits')
+        .then(res => res.json())
+        .then(res => {
+            visitorCount.innerHTML = res.value;
+        })
+</body>
 </html>
