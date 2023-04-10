@@ -139,6 +139,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">AWS Cloud Technologies</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <h4 class="stat-title">My Timeline</h4>
@@ -542,16 +551,10 @@
         <i class="fas fa-adjust"></i>
     </div>
     <script src="app.js"></script>
-</body>
-<body>
-    <!--Visitor Tracker-->
-    <p>You are visitor number: <span id="visitor-count"></span></p>
-    <script>
-        var visitorCount = document.getElementById('visitor-count');
-        fetch('https://api.countapi.xyz/hit/stevenbalalis.com/visits')
-        .then(res => res.json())
-        .then(res => {
-            visitorCount.innerHTML = res.value;
-        })
+    <div id="footer">
+        <p>This is made with love, coffee, and AWS.</p>
+        <p>It was last viewed by someone on</p>
+        <p>Number of visits</p>
+    </div>
 </body>
 </html>
